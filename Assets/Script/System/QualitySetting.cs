@@ -27,4 +27,10 @@ public class QualitySetting : MonoBehaviour
     {
         Screen.fullScreen = isFullscreen;
     }
+
+    public void SetFPS(bool isFPS)
+    {
+        FPSDisplay fps = FindObjectOfType<FPSDisplay>();
+        fps.showFPS = isFPS;
+    }
 }
