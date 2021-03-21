@@ -7,6 +7,7 @@ public class MenuScript : MonoBehaviour
     [SerializeField] private GameObject mainPanel;
     [SerializeField] private GameObject finishPanel;
     [SerializeField] private GameObject gameUI;
+    [SerializeField] private GameObject controlsPanel;
 
     public void OpenMainPanel()
     {
@@ -14,6 +15,12 @@ public class MenuScript : MonoBehaviour
         finishPanel.SetActive(false);
 
         mainPanel.SetActive(true);
+    }
+
+    public void OpenControlsPanel()
+    {
+        bool state = controlsPanel.activeInHierarchy;
+        controlsPanel.SetActive(!state);
     }
 
     public void StartGame()
