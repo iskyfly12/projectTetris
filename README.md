@@ -8,7 +8,7 @@ This is the repository of an Unity3D game made as part of a 5-day challenge.
 
 ### Unity Version
 
--  Unity ver. 2019.4
+-  Unity ver. 2020.3
 
 ### Author
 
